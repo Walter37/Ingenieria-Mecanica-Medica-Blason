@@ -1,0 +1,58 @@
+//Index
+
+.mainIndex__container__row--tituloPrincipal2{
+    background:linear-gradient(to right, $celestelogo, $celeste1 50%);
+
+    div{
+        width: 85%;
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+        h1{	
+            color: $gris2;
+            font-weight: normal;
+            font-family: Lusitana;
+            padding:30px 0px 30px 0px ;
+            margin: 0;
+            font-size: 5rem;
+        }
+        hr{
+            border:solid 1.5px $gris2;
+            animation-name: efecto1;
+            animation-iteration-count: initial;
+            animation-duration: 3s;    
+        }
+    }
+}
+@keyframes efecto1{
+	from{width: 0%;}
+	to{width: 99%;}
+}
+.degradadoImgPrincipal{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(51,204,186,0) 35%, $celeste1 95%);
+}
+@media(max-width:765px){
+	.degradadoImgPrincipal{
+       // background: none;
+        background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(27,149,180,0) 35%, $celestelogo 95%);
+	}
+}
+
+.mainIndex__c-subTitulos{
+	background-color: $blanco;
+	text-align: center;
+	padding: 80px;
+    h2{
+        color: $celeste1; 
+        padding-bottom: 50px;
+        font-size:5rem;
+        font-weight: 400; 
+    }
+    h4{
+        color: $gris7;
+        font-weight: 400; 
+        font-size:2rem;
+    }  
+}

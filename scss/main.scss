@@ -1,0 +1,50 @@
+@import "scss-bootstrap/_bootstrap.scss";
+@import "scss-bootstrap/_bootstrap-grid.scss";
+@import "scss-bootstrap/_bootstrap-reboot.scss";
+
+@import "variables.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "index.scss";
+@import "servicios.scss";
+@import "nosotros.scss";
+@import "productos.scss";
+
+
+//General
+
+//h1-titulo principal index 
+//h2-nombre empresa index
+//h3-titulos productos
+//h4-index / nosotros 
+//h5-titulos paginas / servicios
+//h6-servicios / nombres productos
+
+html{
+	font-size: 62.5%;
+} 
+body{
+    font-family: 'Work Sans', sans-serif;
+	//font-family: 'Source Sans Pro', sans-serif;
+}
+h5{
+	color: $gris11;
+    border-top: solid 2px $celeste1;
+	padding-top: 5px;
+	font-size: 2.8rem;
+	margin-top: 100px;
+	margin-bottom: 90px;
+} 
+p{
+	font-size: 1.7rem;
+	color: $gris3 ;
+}
+a{ 
+	color: $gris6;
+	font-size: 2.2rem;
+}
+a:hover{
+	text-decoration: none;
+}
+
+

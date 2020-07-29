@@ -1,0 +1,39 @@
+//SERVICIOS
+
+h6{
+    margin: 20px;
+    margin-top: 0px;
+	color: $gris7;
+	font-size: 1.8rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+//practica mixin
+@mixin cardServicios{
+    margin: 0px 20px 40px 20px;
+    background-color: $gris2;          
+    min-width: 200px;
+    box-shadow: 5px 5px 5px 0px $gris3;
+}
+.mainServicios{
+    margin-bottom: 50px;
+
+        .cardServicios{
+            @include cardServicios;
+
+            h5{
+                font-size: 2.6rem;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                border: none;
+            }
+
+            .iconoServicios{
+
+                img{
+                    width: 100px;
+                    margin: 30px;
+                }           
+            }
+        }
+}
