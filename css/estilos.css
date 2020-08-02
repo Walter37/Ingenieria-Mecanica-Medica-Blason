@@ -10107,7 +10107,8 @@ footer {
   .footer__padre__copyright p {
     color: white;
     margin: 7px auto;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: 300; }
 
 .mainIndex__container__row--tituloPrincipal2 {
   background: linear-gradient(to right, #1B95B4, #13BFB1 50%); }
@@ -10172,7 +10173,7 @@ h6 {
     background-color: #E9EAEA;
     min-width: 200px;
     box-shadow: 5px 5px 5px 0px #D4D4D7; }
-    .mainServicios .cardServicios h5 {
+    .mainServicios .cardServicios h3 {
       font-size: 2.6rem;
       margin-top: 0px;
       margin-bottom: 10px;
@@ -10208,7 +10209,7 @@ h6 {
     font-size: 1.8rem;
     font-family: 'Source Sans Pro', sans-serif; }
 
-h3 {
+h5 {
   color: #1B95B4;
   font-size: 2.6rem;
   margin-top: 0px;
@@ -10272,7 +10273,7 @@ html {
 body {
   font-family: 'Work Sans', sans-serif; }
 
-h5 {
+h3 {
   color: #595A5C;
   border-top: solid 2px #13BFB1;
   padding-top: 5px;

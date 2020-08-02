@@ -15,9 +15,9 @@
 
 //h1-titulo principal index 
 //h2-nombre empresa index
-//h3-titulos productos
+//h3-titulos paginas / servicios
 //h4-index / nosotros 
-//h5-titulos paginas / servicios
+//h5-titulos productos 
 //h6-servicios / nombres productos
 
 html{
@@ -27,7 +27,7 @@ body{
     font-family: 'Work Sans', sans-serif;
 	//font-family: 'Source Sans Pro', sans-serif;
 }
-h5{
+h3{
 	color: $gris11;
     border-top: solid 2px $celeste1;
 	padding-top: 5px;
