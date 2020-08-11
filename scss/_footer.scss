@@ -45,16 +45,10 @@ footer{
             }
         }
     @media(max-width:768px){
-                margin-left: -10px;
-                li{  
-                    font-size: 1.4rem;                                       
+                margin-left: -10px;                                                  
                     span{                              
                         display: none;                     
-                    }  
-                    .footer__padre--linkContacto{
-                        font-size: 1.4rem; 
-                    }                                         
-                }
+                    }                  
             }                  
     }
 } 
@@ -81,12 +75,8 @@ footer{
         border-left: solid 1px $gris6;;
         padding: 0px 25px 0px 15px;
         @media(max-width:992px){         
-                font-size: 1.5rem;
                 padding: 0px 20px 0px 5px;
-            }  
-        @media(max-width:768px){
-                font-size: 1rem;
-            }
+            }        
     }   
 }
 .footer__padre__boton--button{
@@ -100,9 +90,9 @@ footer{
 .footer__padre__copyright{
     background-color: $gris7;
     p{
-        color: white;
-        margin: 7px auto;
-        font-size: 1.5rem;
+        color: $gris2;
+        margin: 8px auto;
+        font-size: 1.4rem;
         font-weight: 300;
     }
 }

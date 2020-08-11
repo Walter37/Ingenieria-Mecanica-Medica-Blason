@@ -9,6 +9,7 @@
 @import "servicios.scss";
 @import "nosotros.scss";
 @import "productos.scss";
+@import "contacto.scss";
 
 
 //General
@@ -16,25 +17,57 @@
 //h1-titulo principal index 
 //h2-nombre empresa index
 //h3-titulos paginas / servicios
-//h4-index / nosotros 
-//h5-titulos productos 
+//h4-sub titulo index / nosotros 
+//h5-titulos productos / index 
 //h6-servicios / nombres productos
+
+
 
 html{
 	font-size: 62.5%;
-} 
+	
+	@media(max-width:768px){
+		font-size: 45%;
+	}
+	/*@media(min-width:567px){	
+		font-size: 45%;
+	}*/
+	@media(min-width:768px){	
+		font-size: 50%;
+	}
+	@media(min-width:992px){
+		font-size: 55%;
+	}
+	@media(min-width:1200px){
+		font-size: 60%;
+	}
+}
+
 body{
     font-family: 'Work Sans', sans-serif;
 	//font-family: 'Source Sans Pro', sans-serif;
+	//margin: 0;
+	//padding: 0;
 }
-h3{
-	color: $gris11;
-    border-top: solid 2px $celeste1;
-	padding-top: 5px;
-	font-size: 2.8rem;
+#contenedorTitulos{
 	margin-top: 100px;
 	margin-bottom: 90px;
-} 
+	hr{			
+		border:solid 2px $celeste1;
+		animation-name: efecto1;
+				animation-iteration-count: initial;
+				animation-duration: 1s;    
+				@keyframes efecto1{
+					from{width: 0%;}
+					to{width: 96%;}
+				}
+	}
+	h3{
+		color: $gris11;	
+		padding-top: 5px;
+		font-size: 2.8rem;			
+	} 
+}
 p{
 	font-size: 1.7rem;
 	color: $gris3 ;

@@ -2,10 +2,9 @@
 
 .mainIndex__container__row--tituloPrincipal2{
     background:linear-gradient(to right, $celestelogo, $celeste1 50%);
-
     div{
+        max-width: 500px;
         width: 85%;
-        text-align: center;
         margin: 20px 0px 20px 0px;
         h1{	
             color: $gris2;
@@ -14,36 +13,35 @@
             padding:30px 0px 30px 0px ;
             margin: 0;
             font-size: 5rem;
+            text-align: center;
         }
         hr{
             border:solid 1.5px $gris2;
             animation-name: efecto1;
             animation-iteration-count: initial;
             animation-duration: 3s;    
+            @keyframes efecto1{
+                from{width: 0%;}
+                to{width: 99%;}
+            }
         }
     }
-}
-@keyframes efecto1{
-	from{width: 0%;}
-	to{width: 99%;}
 }
 .degradadoImgPrincipal{
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(51,204,186,0) 35%, $celeste1 95%);
+    @media(max-width:765px){
+        .degradadoImgPrincipal{
+            background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(27,149,180,0) 35%, $celestelogo 95%);
+        }
+    }
 }
-@media(max-width:765px){
-	.degradadoImgPrincipal{
-       // background: none;
-        background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(27,149,180,0) 35%, $celestelogo 95%);
-	}
-}
-
 .mainIndex__c-subTitulos{
 	background-color: $blanco;
 	text-align: center;
-	padding: 80px;
+    padding: 80px 20px;  
     h2{
         color: $celeste1; 
         padding-bottom: 50px;
@@ -55,4 +53,30 @@
         font-weight: 400; 
         font-size:2rem;
     }  
+}
+.mainIndex__c-icono{
+    height: 100%;
+    width: 100%;
+    padding: 50px 20px 50px 20px;
+    background: linear-gradient(to left, $celestelogo, $celeste1);    
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+        img{
+            height: 200px;
+            padding: 15px;
+            @media(max-width:992px){	
+                height: 150px;
+            }
+        }
+        h5{
+            color: $blanco;
+            text-align: center;
+            font-weight: 400;
+            font-size: 2rem;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+    } 
 }

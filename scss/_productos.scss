@@ -2,14 +2,14 @@
 
 h5{
     color: $celestelogo;
-	font-size: 2.6rem;
-	margin-top: 0px;
-	margin-bottom: 0px;
+    font-size: 2.6rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .mainProductos__titulos__contenedor{
     background-color: $gris1;
     padding: 40px;
-
+    
     &--subTitulo{
         color: $gris7;
         font-size: 2.4rem;
@@ -17,26 +17,23 @@ h5{
         margin-top: 10px;
         margin-bottom: 0px;
     }
-
 }
-
-
 .mainProductos__imagenes{
     background-color: $gris1;
     padding: 0px 0px 50px 0px;
 
     &__card{
         background-color: white;
-        margin: 30px;
+        margin: 20px;
         padding: 0px;
         box-shadow: 5px 5px 5px 0px $gris3;
-
+        
         &__c-img{
            position: relative;
            display: flex;
            justify-content: flex-end;
            align-items: flex-end;
-           cursor: pointer;
+           cursor: pointer;     
 
            a{
             color: white;
@@ -50,11 +47,14 @@ h5{
             display: none;   
             }     
         }
-
+       /* &:hover .mainProductos__imagenes__card__c-img{
+            z-index: 1;
+            background-color: white;           
+            transform:scale(1.5,1.5);
+        }*/
         &:hover .mainProductos__imagenes__card__c-img--masInfo{
             display: block;
         }
-
         &--nombre{
             border-left: solid 2px $celeste1;
             background-color: $gris2;
@@ -64,7 +64,6 @@ h5{
             display: flex;
             justify-content: center;
             align-items: center;
-
             h6{
                 color: $gris7;
                 font-weight: 600; 

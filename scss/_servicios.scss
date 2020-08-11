@@ -8,7 +8,6 @@ h6{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-//practica mixin
 @mixin cardServicios{
     margin: 0px 20px 40px 20px;
     background-color: $gris2;          
@@ -17,7 +16,6 @@ h6{
 }
 .mainServicios{
     margin-bottom: 50px;
-
         .cardServicios{
             @include cardServicios;
 
@@ -27,12 +25,14 @@ h6{
                 margin-bottom: 10px;
                 border: none;
             }
-
             .iconoServicios{
 
                 img{
                     width: 100px;
                     margin: 30px;
+                    @media(max-width:992px){	
+                        width: 70px;
+                    }
                 }           
             }
         }
