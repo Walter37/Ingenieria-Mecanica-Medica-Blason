@@ -4,11 +4,51 @@ h5{
     color: $celestelogo;
     font-size: 2.6rem;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
 }
-.mainProductos__titulos__contenedor{
+.modal-title{
+    color: $gris11;
+    font-weight: 400;  
+}
+#productos-pictogramas{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    @media(max-width:768px){
+        display: none;
+        padding: 0px;  
+	}          
+}
+.mainProductos__titulo{
+    text-align: center;
+
+    &--contenedor{
+        display: flex;
+        justify-content: center;
+    }
+}
+.mainIndex__c-icono{
+    &--primero{
+        animation:fadeInRight;
+        animation-duration: 1s;
+    }
+    &--segundo{
+        animation:fadeInRight;
+        animation-duration: 1.3s;
+    }
+    &--tercero{
+        animation:fadeInRight;
+        animation-duration: 1.6s;
+    }
+    &--cuarto{
+        animation:fadeInRight;
+        animation-duration: 1.9s;
+    }
+}
+.mainProductos__titulosSecundarios{
+    text-align: center;
     background-color: $gris1;
-    padding: 40px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     
     &--subTitulo{
         color: $gris7;
@@ -22,9 +62,14 @@ h5{
     background-color: $gris1;
     padding: 0px 0px 50px 0px;
 
+    &--fila1{
+        display: flex;
+        justify-content: center;
+    }
     &__card{
+        flex-direction: column;
         background-color: white;
-        margin: 20px;
+        margin: 25px;
         padding: 0px;
         box-shadow: 5px 5px 5px 0px $gris3;
         
@@ -33,29 +78,29 @@ h5{
            display: flex;
            justify-content: flex-end;
            align-items: flex-end;
-           cursor: pointer;     
-
-           a{
-            color: white;
-            font-family: 'Source Sans Pro';
-           }
-
-           &--masInfo{
-            background-color: rgba(0,0,0,0.5);
-            padding: 10px;
-            position: absolute;
-            display: none;   
+           cursor: pointer;   
+   
+           img:hover{
+                opacity: 60%;
+                transition: all 1s;
+                transform: scale(1.1);
+            }              
+            a{
+                color: $blanco;
+                font-family: 'Source Sans Pro';
+            }
+            &--masInfo{
+                background-color: rgba(0,0,0,0.5);
+                padding: 10px;
+                position: absolute;
+                display: none;   
             }     
         }
-       /* &:hover .mainProductos__imagenes__card__c-img{
-            z-index: 1;
-            background-color: white;           
-            transform:scale(1.5,1.5);
-        }*/
         &:hover .mainProductos__imagenes__card__c-img--masInfo{
             display: block;
         }
         &--nombre{
+            text-align: center;
             border-left: solid 2px $celeste1;
             background-color: $gris2;
             height: 50px;

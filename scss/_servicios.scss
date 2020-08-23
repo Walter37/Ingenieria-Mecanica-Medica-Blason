@@ -17,7 +17,7 @@ h6{
 .mainServicios{
     margin-bottom: 50px;
         .cardServicios{
-            @include cardServicios;
+            @include cardServicios;                 
 
             h3{
                 font-size: 2.6rem;
@@ -26,7 +26,7 @@ h6{
                 border: none;
             }
             .iconoServicios{
-
+                
                 img{
                     width: 100px;
                     margin: 30px;
@@ -34,6 +34,10 @@ h6{
                         width: 70px;
                     }
                 }           
+            }
+            &:hover{
+                animation: pulse;
+                animation-duration: 3s;
             }
         }
 }

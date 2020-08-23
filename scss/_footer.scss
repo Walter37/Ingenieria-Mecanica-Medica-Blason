@@ -18,7 +18,7 @@ footer{
         margin-left: 30px;
         padding: 0px;
         li{
-            font-size:1.8rem;
+            font-size:1.6rem;
             color: $gris7;
             margin-left: 0px;            
             img{
@@ -30,7 +30,7 @@ footer{
             }
             span{               
                 color: $gris7;
-                font-size:1.8rem;
+                font-size:1.6rem;
                 margin: 1px auto;
                 margin-left: 5px;
                 margin-right: 5px;
@@ -54,7 +54,7 @@ footer{
 } 
 .footer__padre--linkContacto{
 	color: $gris7;
-	font-size:1.8rem;
+	font-size:1.6rem;
 }
 .footer__padre__footerServicios{
 	width: 100%;
@@ -70,10 +70,13 @@ footer{
     li{
         background-color: $gris2;
         color: $gris6;
-        font-size:1.8rem;
+        font-size:1.6rem;
         border-style: none;
         border-left: solid 1px $gris6;;
-        padding: 0px 25px 0px 15px;
+        padding: 0px 50px 0px 15px;
+        a{
+            font-size: 1.6rem;
+        }
         @media(max-width:992px){         
                 padding: 0px 20px 0px 5px;
             }        
@@ -83,6 +86,12 @@ footer{
     margin: 80px 0px 40px 0px;
     background-color: $celeste2;
     border-color: transparent;
+
+    &:hover{
+        background-color: $celestelogo;
+        animation: pulse;
+        animation-duration: 1s;
+    }   
     a{
         color: white;
     }

@@ -22,7 +22,7 @@
                 padding: 10px;              
                 img{
                     height: 18px;
-                }
+                }               
             }         
             p{
                 color: $gris6;
@@ -46,13 +46,16 @@
                 background-color: $gris3;            
                 height: 100%;
                 padding-right: 10px;
-                padding-left: 10px;
+                padding-left: 10px;               
                 a{
                     display: flex;       
-                align-items: center;
+                    align-items: center;
                     img{
                         margin: 0px 10px 0px 10px;
-                        height: 25px;
+                        height: 25px;                      
+                        &:hover{
+                            filter: invert(40%);
+                        }                     
                     }       
                 }              
             }
@@ -71,13 +74,22 @@
                 max-height: 65px;
                 margin-top: 8px;
                 margin-bottom: 3px;
+                animation: fadeIn;
+                animation-duration: 2s;
             }       
         }
         &--navbar{
             padding-right: 0px;
             .dropdown-menu{
+                margin-top: 5px;
+                border-radius: 5px 5px 5px 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;             
                 a{
                     font-size: 1.8rem;
+                    color: $negro;
+                    padding-right: 20px;
+                    padding-left: 20px;
                 }
             }
             li{

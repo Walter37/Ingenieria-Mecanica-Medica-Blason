@@ -22,18 +22,18 @@
             animation-duration: 3s;    
             @keyframes efecto1{
                 from{width: 0%;}
-                to{width: 99%;}
+                to{width: 100%;}
             }
         }
     }
 }
-.degradadoImgPrincipal{
+#degradadoImgPrincipal{
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(51,204,186,0) 35%, $celeste1 95%);
     @media(max-width:765px){
-        .degradadoImgPrincipal{
+        &{
             background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(27,149,180,0) 35%, $celestelogo 95%);
         }
     }
@@ -52,6 +52,12 @@
         color: $gris7;
         font-weight: 400; 
         font-size:2rem;
+        span{
+            font-size:2.2rem;
+            font-weight: 600; 
+            line-height: 2.5em ;
+            letter-spacing: 0.3rem;
+        }
     }  
 }
 .mainIndex__c-icono{
@@ -78,5 +84,9 @@
             margin-top: 5px;
             margin-bottom: 30px;
         }
+        &:hover{
+            animation: pulse;
+            animation-duration: 1s;
+        } 
     } 
 }
